@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollywood</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="css/hollywood.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        #googleMap {
+            width: 100%;
+            height: 400px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+
+<body id="page-top">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Hollywood</a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href=#people>people</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#movies>movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#studios>studios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#cinemas>cinemas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#contacts>contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#>ADMINISTRATIVE AREA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Bem vindo à</div>
+                <div class="intro-headind text-uppercase">HollyWood</div>
+                <a id="btnRegister" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">REGISTER</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################# PEOPLE ###################################-->
+    <section class="bg-light" id="people">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Atores e Realizadores</h2>
+                    <h3 class="section-subheading text-muted">Atores e Realizadores mais conhecidos da Hollywood!</h3>
+                </div>
+            </div>
+            <div class="row" id="renderPeople">
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Aqui podes escolher os seus Atores e Realizadores favoritos!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="imag/Brad-Pitt.jpg" alt="Brad Pitt" class="img-fluid rounded-circle w-50 mb-3">
+                        <h3>Brad Pitt</h3>
+                        <h5>Actor</h5>
+                        <p>Qualquier coisa do Brad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="movies">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Filmes</h2>
+                    <h3 class="section-subheading text-muted">Escolha e veja os teus filmes favoritos da Hollywood!</h3>
+                </div>
+            </div>
+            <div id="movingVideos" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#movingVideos" data-slide-to="0" class="active"></li>
+                    <li data-target="#movingVideos" data-slide-to="1"></li>
+                    <li data-target="#movingVideos" data-slide-to="2"></li>
+                    <li data-target="#movingVideos" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Nt9L1jCKGnE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6dSKUoV0SNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MDQd_gaMGoI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AST2-4db4ic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#movingVideos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#movingVideos" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Avançar</span>
+                </a>
+            </div>
+            <hr class="hr-section">
+        </div>
+    </section>
+
+
+    <!-- ############################# STUDIOS ###################################-->
+
+    <section id="studios">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Estúdios</h2>
+                <h3 class="section-subheading text-muted">Conheça os melhores e mais famosos Estúdios do mundo do Cinema!</h3>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imag/columbia-pictures-card.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Columbia Pictures</h4>
+                                <p class="card-text text-justify">Columbia Pictures Industries, Inc. (commonly known as Columbia Pictures) is an American film studio and production and distribution company that is a member of the Sony Pictures Motion Picture Group, a division of Sony
+                                    Entertainment's Sony Pictures Entertainment, itself a subsidiary of the Japanese multinational conglomerate Sony.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="col text-center">
+                                    <div class="socials">
+                                        <a href="#"><i class="social-icons fa fa-facebook"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-instagram"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imag/20th-Century-Fox-card.jpeg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">20th Century-Fox</h4>
+                                <p class="card-text text-justify">20th Century Studios, Inc. (simply known as 20th Century, or just 20th, formerly known as the Tweniteth Century Fox Film Corporation)[a][b] is an American film studio that is a subsidiary of The Walt Disney Studios, a division
+                                    of The Walt Disney Company. The studio is located on the Fox Studio Lot in the Century City area of Los Angeles. Walt Disney Studios Motion Pictures distributes and markets the films produced by 20th Century Studios.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="col text-center">
+                                    <div class="socials">
+                                        <a href="#"><i class="social-icons fa fa-facebook"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-instagram"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imag/Warner-Bros-card.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Warner Bros</h4>
+                                <p class="card-text text-justify">Warner Bros. Entertainment Inc. (commonly known as Warner Bros. and abbreviated as WB; formerly traded as Warner Bros. Inc.) is an American diversified multinational mass media and entertainment conglomerate headquartered
+                                    at the Warner Bros. Studios complex in Burbank, California, and a subsidiary of AT&T's WarnerMedia through its Studios and Networks Group division. </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="col text-center">
+                                    <div class="socials">
+                                        <a href="#"><i class="social-icons fa fa-facebook"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-instagram"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr-section">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ############################# CINEMAS ###################################-->
+    <section id="cinemas" class="section pb-5">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Cinemas</h2>
+                <h3 class="section-subheading text-muted">Os melhores Filmes nos melhores Cinemas!</h3>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imag/cinema1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Cinerama</h4>
+                                <p class="card-text text-justify">Krakatoa, east of Java</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="col text-center">
+                                    <div class="socials">
+                                        <a href="#"><i class="social-icons fa fa-facebook"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-instagram"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imag/cinema2.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Cinema NOS</h4>
+                                <p class="card-text text-justify">O Cimena que mais apresenta filmes da Hollywwod em Portugal.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="col text-center">
+                                    <div class="socials">
+                                        <a href="#"><i class="social-icons fa fa-facebook"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-instagram"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="imag/cinema3.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">ArcLight Cinemas</h4>
+                                <p class="card-text text-justify">ArcLight is more than a place to see a movie; it is an experience. Since 2002, their mission has been to create the best moviegoing environment possible, through careful thought, design, and attention to detail.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="col text-center">
+                                    <div class="socials">
+                                        <a href="#"><i class="social-icons fa fa-facebook"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-instagram"></i></a>
+                                        <a href="#"><i class="social-icons fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr-section">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ############################# CONTACTS US ###################################-->
+    <section id="contacts">
+        <div class="cantainer">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Contacts</h2>
+                    <h3 class="section-subheading text-muted">Diz-nos o que acha da Hollywod! Exponha as suas dúvidas e sugestões e nós entraremos em contacto consigo o mais breve possível.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contactForm" name="sentMessage">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="from-group">
+                                    <input class="form-control" id="name" type="text" placeholder="o seu nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="email" type="email" placeholder="o seu email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" id="phone" type="tel" placeholder="o seu número de telemóvel">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="a sua mensagem" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar mensgem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid" id="googleMap">
+            <div class="row">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy; Hollywood 2020</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AUTENTICAÇÃO -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entrar na Área Administrativa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control " placeholder="Email " /><br>
+                            <input type="password " class="form-control " placeholder="Password " />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary" data-dismiss="modal ">Cancelar</button>
+                    <button type="button " class="btn btn-primary ">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="js/animation.js "></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.26.9/sweetalert2.all.min.js "></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/hollywood.js "></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcYng9pBfj_LmDthyiydpfyy3bftchOmg&callback=myMap "></script>
+
+
+</body>
+
+</html>
